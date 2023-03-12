@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Script -->
+    <script src="nav.js" defer></script>
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logoContainer">
+            <h1>Registracija</h1>
+        </div>
+    </header>
+    <!-- Main menu -->
+    <nav class="main-nav">
+        <a class="link" href="index.html">Pradinis</a>
+        <a class="link" href="blog.html">Mano blogas</a>
+        <a class="link" href="about.html">Apie mane</a>
+        <i id="burger" class="fa-solid fa-bars"></i>
+    </nav>
+
+    <!-- Side menu -->
+    <nav class="side-nav">
+        <a class="link" href="index.html">Pradinis</a>
+        <a class="link" href="blog.html">Mano blogas</a>
+        <a class="link" href="about.html">Apie mane</a>
+    </nav>
+
+    <!-- Sign up -->
+    <div class="signupContainer">
+        <form id="signUp" class="sgn">
+            <label for="email">El.Paštas</label>
+            <input class="value" id="email" name="email" type="email" value = "">
+            
+            <label for="password">Slaptažodis</label>
+            <input class="value" id="pw1" name="password" type="password" value = "">
+
+            <label for="confirm">Patvirtinti slaptažodį</label>
+            <input class="value" id="pw2" name="confirm" type="password" value = ""><br>
+
+            <span id = "badMsg" style="color:crimson"></span>
+            <span id = "goodMsg" style="color:whitesmoke"></span><br>
+
+            <input class="btn" type="submit" value="Registruotis">
+            <span id="home"></span>
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tangerine&display=swap');
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important; 
+	float: none !important;
+    background-image: url(/img/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 115px;
+    display: flex;
+}
+
+.logoContainer {
+    background-color: aquamarine;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-8deg);
+    margin-top: 2px;
+    border-radius: 0 0 0 50px;
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    padding-top: 10px;
+    text-shadow: 0 0 10px #FFFFFF;
+    color: black;
+}
+
+/* MAIN */
+
+main {
+    width: auto;
+    height: auto;
+    max-width: 1080px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-end; */
+    padding-top: 50px;
+    background: #62B6B7;
+    background: -moz-linear-gradient(45deg, #62B6B7 0%, #CBEDD5 100%);
+    background: -webkit-linear-gradient(45deg, #62B6B7 0%, #CBEDD5 100%);
+    background: linear-gradient(45deg, #62B6B7 0%, #CBEDD5 100%);
+}
+
+.postContainer {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin: 50px 0 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postHeader {
+    width: auto;
+    height: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    text-decoration: underline;
+}
+
+.post {
+    width: 230px;
+    height: 310px;
+    margin-block: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px 5px black;
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+.imgContainer img {
+    width: 180px;
+    max-height: 200px;
+}
+
+.post p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.post a button {
+    width: 100%;
+    margin: 0;
+}
+
+button {
+    width: auto;
+    padding: 5px;
+    background-color: rgb(187, 249, 101);
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+aside {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    width: auto;
+    height: 100px;
+    background: #CBEDD5;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    font-size: 30px;
+}
+
+.fa-instagram {
+    color: #cc2366;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .signContainer {
+        height: 200px;
+    }
+
+    .postWrapper {
+        display: flex;
+    }
+    aside {
+        display: block;
+        /* border: 1px solid black; */
+        width: 60%;
+        height: auto;
+        margin: 50px 50px 25px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .asideHeader {
+        width: 100%;
+        text-align: center;
+    }
+
+    .notes {
+        width: 350px;
+        height: 350px;
+        background: url(/img/notes.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Tangerine', cursive;
+        font-size: 22px;
+        padding: 120px 60px 50px 60px;
+        margin: 30px 0 0 170px;
+        rotate: 10deg;
+    }
+
+    .notes p {
+        rotate: 1.5deg;
+    }
+
+    .news {
+        height: auto;
+        width: auto;
+        margin-top: 100px;
+    }
+
+    .news img {
+        width: 300px;
+        height: 300px;
+        float: right;
+        margin-inline: 15px;
+    }
+
+    .news p {
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 600;
+        padding-inline: 20px;
+        font-family: 'Poiret One', cursive;
+    }
+}

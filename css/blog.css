@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important; 
+	float: none !important;
+    background-image: url(/img/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 115px;
+    display: flex;
+}
+
+.logoContainer {
+    background-color: aquamarine;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-8deg);
+    margin-top: 2px;
+    border-radius: 0 0 0 50px;
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    padding-top: 10px;
+    text-shadow: 0 0 10px #FFFFFF;
+    color: black;
+}
+
+
+.signContainer {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.signContent {
+    width: 285px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #439A97;
+    border: solid black;
+    border-width: 2px 0 2px 2px;
+    border-radius: 50px 0 0 50px;
+}
+
+.signBtn {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-block: 8px;
+}
+
+.signContent p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.pColor {
+    color: rgb(187, 249, 101);
+    border: 1px solid black;
+    padding-inline: 5px;
+    border-radius: 5px;
+}
+
+button {
+    width: auto;
+    padding: 5px;
+    background-color: rgb(187, 249, 101);
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sgn  {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sgn input {
+    width: 150px;
+    margin-block: 5px;
+}
+
+.submit {
+    width: auto;
+    padding: 5px;
+    background-color: rgb(187, 249, 101);
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.postContainer {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 330px;
+    height: 410px;
+    margin-block: 20px;
+    padding-block: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+.imgContainer img {
+    width: 230px;
+    max-height: 250px;
+}
+
+.post p {
+    font-size: 13px;
+    padding: 30px;
+}
+
+
+@media(min-width: 768px) {
+    
+    .postContainer {
+        width: auto;
+        height: auto;
+        margin-block: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .post {
+        width: 450px;
+        height: 500px;
+        margin: 30px;
+    }
+    
+    .imgContainer img {
+        width: 290px;
+        max-height: 330px;
+    }
+    
+    .post p {
+        font-size: 16px;
+        padding: 30px;
+    }
+}
