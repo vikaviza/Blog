@@ -181,7 +181,7 @@ footer {
     .notes {
         width: 350px;
         height: 350px;
-        background: url(/img/notes.png);
+        background: url(../img/notes.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
