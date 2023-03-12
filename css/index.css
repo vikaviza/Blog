@@ -5,7 +5,7 @@ body {
     height: auto;
     margin: 0 auto !important; 
 	float: none !important;
-    background-image: url(./img/headerbg.jpg);
+    background-image: url(../img/headerbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
